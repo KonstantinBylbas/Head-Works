@@ -1,0 +1,18 @@
+@import '../../index.scss';
+
+button{
+    padding: 10px 28px;
+    position: relative;
+    background-color: $primary;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:active{
+        
+    }
+
+    &:hover{
+        box-shadow: 0 0 0.5rem $primary;
+    }
+}

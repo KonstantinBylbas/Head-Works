@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+nav {
+  background-color: $secondary;
+
+  .container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    margin: 20px 28px;
+    
+    h6{
+        transition: 0.3s;
+    }
+
+    &:hover{
+        h6{
+            color: $primary;
+        }
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+  }
+}
