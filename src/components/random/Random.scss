@@ -1,5 +1,11 @@
 @import '../../index.scss';
 
 .random{
-    
+    height: calc(100vh + 60px - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+
 }

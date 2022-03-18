@@ -1,21 +1,22 @@
 import './App.scss';
-import { Routes, Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
+import Random from './components/random/Random';
+import Favourite from './components/favourite/Favourite';
 
 export default function App() {
   return (
     <div className="App">
 
       <BrowserRouter>
-      <Nav />
+        <Nav />
 
         <Routes>
-          <Route to='*' />
+          <Route path='*' />
 
-          <Route to='/' />
+          <Route path='/' element={<Random />} />
 
-          <Route to='/favourites' />
+          <Route path='/favourites' element={<Favourite />} />
         </Routes>
 
       </BrowserRouter>

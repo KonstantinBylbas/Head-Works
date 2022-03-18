@@ -1,8 +1,8 @@
 import './Button.scss';
 
-export default function Button({ txt }) {
+export default function Button({ txt, handlerClick }) {
     return (
-        <button>
+        <button onClick={handlerClick}>
             {txt}
         </button>
     )
