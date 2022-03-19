@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.block{
+    width: 30%;
+    min-width: 300px;
+    margin: 2rem 0;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+
+    svg{
+        width: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        fill: $light;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    &_text{
+        max-height: 300px;
+        padding: 2rem;
+        background-color: $secondary;
+        overflow: hidden;
+        overflow-y: auto;
+
+        p{
+            margin: 1rem 0 0 0;
+        }
+    }
+
+    .row{
+        margin: 10px 0;
+        justify-content: space-between;
+
+        button{
+            width: calc(50% - 5px);
+        }
+    }
+
+    @media only screen and(max-width: 1200px) {
+        width: 45%;
+    }
+
+    @media only screen and(max-width: 700px) {
+        width: 95%;
+    }
+
+    @media only screen and(max-width: 500px) {
+        &_text{
+            padding: 1rem;
+        }
+    }
+}

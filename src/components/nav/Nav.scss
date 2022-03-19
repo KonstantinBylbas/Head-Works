@@ -15,8 +15,27 @@ nav {
     justify-content: center;
   }
 
+  .menu {
+    width: 2rem;
+    margin: 0 1rem 0 0;
+    display: none;
+    fill: $light;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      fill: $primary;
+    }
+  }
+
+  .close {
+    top: 1rem;
+    right: 1rem;
+  }
+
   a {
     margin: 0 28px;
+    text-transform: capitalize;
 
     h6 {
       transition: 0.3s;
@@ -32,6 +51,44 @@ nav {
   button {
     position: absolute;
     right: 0;
+  }
+
+  @media only screen and(max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .menu {
+      display: block;
+    }
+
+    .container {
+      width: 300px;
+      height: 110vh;
+      padding: 5rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background-color: $secondary;
+      transition: 0.3s;
+
+      &.open {
+        left: 0;
+      }
+
+      a,
+      button {
+        margin: 1rem 0;
+      }
+
+      button {
+        width: 100%;
+        position: relative;
+      }
+    }
   }
 }
 
@@ -52,30 +109,26 @@ nav {
     top: 0;
   }
 
-  svg {
-    width: 2rem;
-    position: absolute;
+  .close {
     top: calc(60px + 2rem);
     right: 2rem;
-    fill: $light;
-    cursor: pointer;
   }
 
   form {
     max-width: 450px;
     min-width: 300px;
     padding: 2rem;
-	background-color: $secondary;
-	
-	h6{
-		margin: 0 0 1.5rem 0;
-	}
+    background-color: $secondary;
+
+    h6 {
+      margin: 0 0 1.5rem 0;
+    }
 
     input,
     textarea,
     button {
-	  width: 100%;
-	  margin: 0.5rem 0;
+      width: 100%;
+      margin: 0.5rem 0;
     }
 
     input,
@@ -86,5 +139,17 @@ nav {
     textarea {
       resize: none;
     }
+  }
+}
+
+.close {
+  width: 2rem;
+  position: absolute;
+  fill: $light;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    fill: $primary;
   }
 }

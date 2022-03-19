@@ -1,5 +1,14 @@
 @import '../../index.scss';
 
 .favourite{
-    
+    position: relative;
+    top: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .block{
+        button{
+            width: 100%;
+        }
+    }
 }

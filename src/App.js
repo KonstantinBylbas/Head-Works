@@ -5,22 +5,23 @@ import Random from './components/random/Random';
 import Favourite from './components/favourite/Favourite';
 
 export default function App() {
-  return (
-    <div className="App">
 
-      <BrowserRouter>
-        <Nav />
+	return (
+		<div className="App">
 
-        <Routes>
-          <Route path='*' />
+			<BrowserRouter>
+				<Nav />
 
-          <Route path='/' element={<Random />} />
+				<Routes>
+					<Route path='*' />
 
-          <Route path='/favourites' element={<Favourite />} />
-        </Routes>
+					<Route path='/' element={<Random />} />
 
-      </BrowserRouter>
+					<Route path='/favourites' element={<Favourite />} />
+				</Routes>
 
-    </div>
-  );
+			</BrowserRouter>
+
+		</div>
+	);
 }
