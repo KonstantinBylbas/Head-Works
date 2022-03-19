@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Head-Works/static/css/main.ebab299a.css",
-    "main.js": "/Head-Works/static/js/main.605064ef.js",
+    "main.js": "/Head-Works/static/js/main.25f367ff.js",
     "static/media/placeholder.png": "/Head-Works/static/media/placeholder.cdd60f7cecf36bac756e.png",
     "index.html": "/Head-Works/index.html",
     "main.ebab299a.css.map": "/Head-Works/static/css/main.ebab299a.css.map",
-    "main.605064ef.js.map": "/Head-Works/static/js/main.605064ef.js.map"
+    "main.25f367ff.js.map": "/Head-Works/static/js/main.25f367ff.js.map"
   },
   "entrypoints": [
     "static/css/main.ebab299a.css",
-    "static/js/main.605064ef.js"
+    "static/js/main.25f367ff.js"
   ]
 }
