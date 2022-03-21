@@ -29,6 +29,7 @@ nav {
   }
 
   .close {
+    display: none;
     top: 1rem;
     right: 1rem;
   }
@@ -39,6 +40,10 @@ nav {
 
     h6 {
       transition: 0.3s;
+
+      &.active {
+        color: $primary;
+      }
     }
 
     &:hover {
@@ -110,6 +115,7 @@ nav {
   }
 
   .close {
+    display: block;
     top: calc(60px + 2rem);
     right: 2rem;
   }
@@ -134,6 +140,7 @@ nav {
     input,
     textarea {
       padding: 0.5rem;
+      color: $dark;
     }
 
     textarea {

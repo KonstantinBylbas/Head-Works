@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Random from './components/random/Random';
 import Favourite from './components/favourite/Favourite';
+import Error from './components/error/Error';
 
 export default function App() {
 
@@ -13,11 +14,11 @@ export default function App() {
 				<Nav />
 
 				<Routes>
-					<Route path='*' />
+					<Route path='*' element={<Error />} />
 
-					<Route path='/' element={<Random />} />
+					<Route path='/Head-Works/' element={<Random />} />
 
-					<Route path='/favourites' element={<Favourite />} />
+					<Route path='/Head-Works/tabs/:id' element={<Favourite />} />
 				</Routes>
 
 			</BrowserRouter>
